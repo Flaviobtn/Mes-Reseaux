@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-image:url(https://i.goopics.net/nljoy1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                font-family:oswald, sans-serif;
+                font-weight: 400;
+                color:#F1F6F5;
+                margin: 0;
+            }
+
+            header img{
+                width: 100%;
+            }
+
+            section img{
+                border-radius: 50%;
+                width: 7%;
+                display: block;
+                margin: auto;
+            }
+            section{
+                text-align: center;
+                width:100%;
+            }
+
+            section:last-child{
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            section:last-child h2{
+                flex-basis: 95%;
+                flex-grow: 1;
+            }
+
+            .bouton {
+                flex-basis:40%;
+                background-color: #556cc2 ;
+                border: 1px solid #3c415c;
+                border-radius: 4px;
+                box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+                box-sizing: border-box;
+                color: #F1F6F5;
+                cursor: pointer;
+                font-family: Oswald, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0.5%;
+                padding: 1%;
+                text-align: center;
+                transform: translateY(0);
+                transition: transform 150ms, box-shadow 150ms;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                }
+
+            .bouton:hover {
+                box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+                transform: translateY(-2px);
+            }
+
+            @media (min-width: 768px) {
+                .bouton {
+                padding: 10px 30px;
+                }
+            }  
+        </style>
+        <title>Tous Mes Réseaux</title>
+    </head>
+    <body>
+        <header>
+            <img src="https://i.goopics.net/hbrpha.jpg" alt="">
+        </header>
+        <main>
+            <section>
+                <h1>TOUT MES RÉSEAUX SOCIAUX</h1>
+                <p>Sur cette page, vous allez pouvoir retrouver tous les réseaux sociaux sur lequels vous pourrez me retrouver:</p>
+            </section>                <section>
+                <img src="https://i.goopics.net/5hoyl2.png" alt="">
+                <h2>Mes Réseaux</h2>
+                <button class="bouton" onclick="window.location.href='https://www.instagram.com/prod.elax/?hl=fr'">Instagram</button>
+                <button class="bouton" onclick="window.location.href='https://discord.com/invite/NkjZMDWWTx'">Discord</button>
+                <button class="bouton" onclick="window.location.href=''">Twitch</button>
+                <button class="bouton" onclick="window.location.href=''">Youtube</button>
+            </section>
+        </main>
+    </body>
+</html>
